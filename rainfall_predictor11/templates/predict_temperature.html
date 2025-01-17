@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 id="temp">Predict Temperature</h1>
+    
+    <video autoplay muted loop id="video-bg">
+        <source src="https://videos.pexels.com/video-files/2935032/2935032-hd_1280_720_30fps.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    <form action="/predict_temperature" method="post">
+        <label for="rainfall">Wind Speed:</label>
+        <input type="text" id="rainfall" name="rainfall" required>
+        <br>
+        <label for="wind_speed">Rainfall:</label>
+        <input type="text" id="wind_speed" name="wind_speed" required>
+        <br>
+        <label for="monthSelector">Select a month:</label>
+  <select id="monthSelecto" name="month">
+    <option value="1">January</option>
+    <option value="2">February</option>
+    <option value="3">March</option>
+    <option value="4">April</option>
+    <option value="5">May</option>
+    <option value="6">June</option>
+    <option value="7">July</option>
+    <option value="8">August</option>
+    <option value="9">September</option>
+    <option value="10">October</option>
+    <option value="11">November</option>
+    <option value="12">December</option>
+  </select>
+        <br>
+        <button type="submit">Predict Temperature</button>
+    </form>
+    {% if prediction is not none %}
+        <h2>Predicted Temperature: {{ prediction }} °C</h2>
+    {% endif %}
+    {% if error %}
+        <h2>Error: {{ error }}</h2>
+    {% endif %}
+{% endblock %}

@@ -10,8 +10,6 @@ This project uses machine learning to predict **rainfall amounts** based on mete
   - Temperature
   - Humidity
   - Wind speed
-  - Pressure
-  - Cloud cover
   - Previous rainfall
 
 - Includes:
@@ -21,19 +19,3 @@ This project uses machine learning to predict **rainfall amounts** based on mete
   - (Optional) API for real-time predictions
 
 ---
-
-## 🧠 Model Overview
-
-You can experiment with various regression models like:
-
-- Linear Regression
-- Random Forest Regressor
-- Gradient Boosting Regressor
-- XGBoost Regressor
-
-Models are trained and compared using metrics like MAE, RMSE, and R² Score.
-
----
-
-## 📁 Project Structure
-

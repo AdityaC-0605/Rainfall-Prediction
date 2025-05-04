@@ -1,0 +1,145 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #f4f6fa;
+    box-sizing: border-box;
+}
+
+#monitor {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 44px;
+    color: #f4f6fa;
+    margin-top: 60px;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+.monitor-container {
+    max-width: 500px;
+    margin: 48px auto;
+    padding: 36px 28px;
+    background: rgba(0,0,0,0.55);
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.13);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.monitor-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.monitor-form label {
+    margin-bottom: 5px;
+    color: #f4f6fa;
+    font-size: 16px;
+    align-self: flex-start;
+}
+
+.monitor-form input[type="number"] {
+    margin-bottom: 16px;
+    padding: 10px 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1.5px solid #b0c4de;
+    background: rgba(255,255,255,0.08);
+    color: #222;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.monitor-form input[type="number"]:focus {
+    outline: none;
+    border-color: #00b4d8;
+    background: #fff;
+    color: #1e3c72;
+}
+
+.monitor-form button {
+    padding: 12px 28px;
+    font-size: 18px;
+    background: #00b4d8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+    font-weight: 600;
+}
+
+.monitor-form button:hover {
+    background: #1e3c72;
+    color: #fff;
+}
+
+.warning {
+    color: #ff5252;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+.normal {
+    color: #4caf50;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+#monitor-bg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background-size: cover;
+    filter: brightness(0.5);
+}
+
+@media (max-width: 700px) {
+    .monitor-container {
+        margin: 16px;
+        padding: 16px 8px;
+    }
+    #monitor {
+        font-size: 28px;
+        margin-top: 24px;
+    }
+}
+
+.monitor-nav {
+    background-color: #555555;
+    color: white;
+    padding: 15px 0;
+}
+
+.monitor-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.monitor-nav ul li {
+    margin: 0 20px;
+}
+
+.monitor-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.monitor-nav ul li a:hover {
+    text-decoration: underline;
+}
